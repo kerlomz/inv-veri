@@ -25,6 +25,9 @@
 
 ##  验证码分析
 
+验证码地址：
+https://inv-veri.chinatax.gov.cn/index.html
+
 如图所示：图像验证码，识别指定颜色的文字。
 ![在这里插入图片描述](https://kerlomz-blog.oss-cn-beijing.aliyuncs.com/inv-veri/1.png)
 
