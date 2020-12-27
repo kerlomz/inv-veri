@@ -1,4 +1,4 @@
-# 国税局验证码识别 | 97.5%识别率
+# 国税局验证码识别 | 发票查验 | 97.5%识别率 | 
 
 ```python
 凡尔赛模式 = True
@@ -7,26 +7,12 @@
 
 **国税发票查验的验证码识别率垄断了2年，目前识别率97.5%，从未被超越，不过近日来差距缩小了，原本市面上除了我这里，平均在70-80左右的识别率。**
 
+**防止各位老铁被骗，给几点建议：**
 
-无意中看到Github有人回复了一个很早的issues，
+1. 如果对方是小号，要求跟对方使用主号联系（如果一切信息都是新建的，难免有做足了准备跑路的嫌疑）
+2. 不要相信对方说的识别率，需要自行对接官网测试，测试数量需要在500次以上，主要是中文的识别率，还有在 **合同上** 必须指明识别率的指标，达不到必须全额退款，对方不敢承诺的话，你们就懂了。只敢说不敢在纸上体现的话 **水分** 就很多了。
 
-https://github.com/Hanmengnan/Identify-the-Captcha/issues/3
 
-在里面看到了一个老哥的评论：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20201205013215674.png)
-新晋老铁的文章地址：https://blog.csdn.net/Open_CV_NLP/article/details/109828259
-
-他刚刚破了90识别率大关，我还惊奇的发现这篇文章居然保留了我早期写的生成器的代码，![在这里插入图片描述](https://img-blog.csdnimg.cn/20201205013506757.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2tlcmxvbXo=,size_16,color_FFFFFF,t_70)
-很明显的印记了，当时一两年前发布在简书上的，挖了不少坑，精准控制了低识别率，还是有不错的小伙子填坑生成出不错的效果，想必这位老哥的生成代码应该是在这份代码的基础上修改的。
-这个Github的作者还提供了模型下载：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20201205013934550.png)
-仔细一看是不是很眼熟？可不就是我写的**开源框架**训练出来的模型命名格式嘛，对一键训练部署的深度学习图像分类框架感兴趣的可以移步：[https://github.com/kerlomz/captcha_trainer](https://github.com/kerlomz/captcha_trainer)
-
-各位感兴趣的可以去比对比对。秉着公平竞争的原则，老板们可各取所需。
-
-我这边的定位是**企业级-商用**水准，**识别率目前97.5%**，12月忙，对手若是突破了95大关，**我将会在年后推出98/99以上识别率的版本**。
-
-如果对竞品感兴趣可以移步：[https://blog.csdn.net/kerlomz/article/details/111396350](https://blog.csdn.net/kerlomz/article/details/111396350) 了解一下，或许对你们的选择会有帮助。
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201205010453849.png)
 识别速度如上图所示5毫秒左右，机器配置如下图：
@@ -35,10 +21,11 @@ https://github.com/Hanmengnan/Identify-the-Captcha/issues/3
 
 测试地址：[http://152.136.207.29:19812/preview?model_name=TAX](http://152.136.207.29:19812/preview?model_name=TAX)
 
-这里提一嘴，如果是截图玩家的话，可以选择测试版模型：
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20201205015103679.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2tlcmxvbXo=,size_16,color_FFFFFF,t_70)
+
 
 使用方法本篇博客就不赘述了，从官网保存验证码原图，选择需要识别的颜色，上传图片识别即可。
+
+
 
 本接口防止白嫖设立了一定的风控，如有商业合作意愿可联系本人QQ（27009583）或合伙人QQ（1095085167），获取文本接口测试。
 
